@@ -5,27 +5,6 @@ import './App.css'
 import Todo from './components/Todo'
 
 function App() {
-  const [title, setTitle] = useState<string>("");
-  const API_URL = "";
-
-  const addTodo = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const response = await fetch(`${API_URL}/createTodo`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ title, isCompleted: false }),
-    });
-
-    if (response.ok) {
-      const newTodo = await response.json();
-      // mutate(
-      //   `${API_URL}/allTodos`,
-      //   async (currentTodos: TodoType[] = []) => [newTodo, ...currentTodos],
-      //   false
-      // );
-      setTitle(""); // Reset input after adding
-    }
-  };
 
   return (
     <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-32 py-4 px-4">
