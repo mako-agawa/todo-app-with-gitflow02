@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   const [title, setTitle] = useState<string>("");
-  const API_URL = "";
+  const API_URL = "http://localhost:8080";
 
   const addTodo = async (e: React.FormEvent) => {
     e.preventDefault();
