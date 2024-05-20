@@ -1,11 +1,12 @@
 
 // import { API_URL } from "@/constants/url";
 import React, { useState } from "react";
+import { TdoType } from "../types";
 // import { mutate } from "swr";
 // import useSWR from "swr";
 
 type TodoProps = {
-  todo: any;
+  todo: TdoType;
 };
 
 const Todo = () => {

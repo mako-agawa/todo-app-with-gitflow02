@@ -19,9 +19,11 @@ function App() {
     >
       <div className="flex items-center border-b-2 border-teal-500 py-2">
         <input
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            setTitle(e.target.value)
-          }
+
+          // onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          //   // setTitle(e.target.value)
+          // }
+
           className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
           type="text"
           placeholder="Add a task"
