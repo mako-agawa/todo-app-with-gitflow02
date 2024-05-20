@@ -1,5 +1,5 @@
 export type TdoType = {
-  id: string;
+  id: number;
   title: string;
   isCompleted: boolean;
 };
